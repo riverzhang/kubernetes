@@ -174,6 +174,8 @@ func autoConvert_v1alpha2_AuditPolicyConfiguration_To_kubeadm_AuditPolicyConfigu
 	out.Path = in.Path
 	out.LogDir = in.LogDir
 	out.LogMaxAge = (*int32)(unsafe.Pointer(in.LogMaxAge))
+	out.LogMaxBackup = (*int32)(unsafe.Pointer(in.LogMaxBackup))
+	out.LogMaxSize = (*int32)(unsafe.Pointer(in.LogMaxSize))
 	return nil
 }
 
@@ -186,6 +188,8 @@ func autoConvert_kubeadm_AuditPolicyConfiguration_To_v1alpha2_AuditPolicyConfigu
 	out.Path = in.Path
 	out.LogDir = in.LogDir
 	out.LogMaxAge = (*int32)(unsafe.Pointer(in.LogMaxAge))
+	out.LogMaxBackup = (*int32)(unsafe.Pointer(in.LogMaxBackup))
+	out.LogMaxSize = (*int32)(unsafe.Pointer(in.LogMaxSize))
 	return nil
 }
 
